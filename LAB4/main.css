@@ -1,0 +1,130 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+    
+.login-box {
+    display: inline-block;
+    border: 2px solid black;
+    padding: 30px 40px;
+    margin-top: 20px;
+}
+.gen-input{
+    width: 250px;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.gen-label {
+    padding: 20px;
+}
+
+
+    
+button {
+    width: 100px;
+    height: 50px;
+    padding: 8px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+  
+.login-button {
+    background-color: lightgreen;
+    color: black;
+}
+  
+.cancel-button {
+    background-color: rgb(242, 108, 108);
+    color: white
+}
+ 
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 1020px;
+    margin: 0px auto;
+    background-color: beige;
+}
+.nav-container{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+.header-container{
+    text-align: right;
+    width: 250px;
+    animation: header-intro linear 2s;
+}
+@keyframes header-intro {
+    0% {width: 1020px;}
+    100% {width: 250px;}
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+}
+.list-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.info-container{
+    display: flex;
+    text-align: left;   
+    padding: 10px;
+    margin-top: 20px;
+}
+input[type="text"] {
+    padding: 8px;
+    width: 300px;
+    margin-right: 10px;
+}
+.filters{
+    margin-top: 20px;
+}
+.movies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.movie {
+    position: relative;
+    width: 400px;
+    height: 800px;
+
+}
+.movie img {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 600px;
+}
+.poster-container{ 
+    width: 100%;
+    height: 600px;
+}
+.movie .overview {
+    position: absolute;   
+    background: rgba(0, 0, 0, 0.75); /* 반투명 검정 배경 */
+    color: #fff;
+    width: 100%;
+    opacity: 0;
+    font-size: 20px;
+    text-align: center;
+    height: 600px;
+}
+.movie:hover .overview{
+    opacity: 1;
+}
+.filter-section {
+    margin-bottom: 10px;
+}
